@@ -1,0 +1,39 @@
+
+1.Linked Lists
+
+The runtime complexity of the function depends on the length of the linked lists.
+Let's assume the length of the first linked list is n and the length of the second linked list is m.
+
+To calculate the sum, the function needs to traverse both linked lists simultaneously,
+performing addition digit by digit. This process takes O(max(n, m)) time because the function
+iterates over the longer linked list.
+
+Therefore, the runtime complexity of this function is O(max(n, m)), where n and m are the lengths
+of the input linked lists.
+
+2.Sorting
+
+Quick Sort and Merge Sort typically have better runtime efficiency compared to Insertion Sort.
+
+Quick Sort has an average-case runtime complexity of O(n log n), which means it performs well on average
+when sorting a large number of elements. In the best case scenario, Quick Sort can achieve a runtime
+complexity of O(n log n) when the pivot element chosen during partitioning divides the input into roughly
+equal halves. However, in the worst case scenario, Quick Sort can have a runtime complexity of O(n^2)
+when the pivot element is consistently chosen as the smallest or largest element, resulting in highly
+unbalanced partitions.
+
+Merge Sort has a consistent runtime complexity of O(n log n) in all scenarios. It divides the input array
+into smaller halves recursively, and then merges them back together in sorted order. This makes Merge
+Sort a stable and efficient sorting algorithm. It is often preferred for sorting large datasets or when
+stability is important.
+
+Insertion Sort, on the other hand, has an average-case and worst-case runtime complexity of O(n^2).
+It performs well for small input sizes or partially sorted arrays. In the best case scenario, when
+the input array is already sorted, Insertion Sort can achieve a runtime complexity of O(n).
+
+#3.RECURSION
+The runtime complexity of this function is O(n), where n is the length of the array. In the worst case,
+the function needs to check every element in the array until it finds a match or reaches the end.
+Therefore, the runtime grows linearly with the size of the array.
+
+
